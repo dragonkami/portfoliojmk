@@ -1,316 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
-  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- =======================================================
-    Theme Name: Baker
-    Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
+<style>
+.hide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  <div class="loader"></div>
-  <div id="myDiv">
-    <!--HEADER-->
-    <div class="header">
-      <div class="bg-color">
-        <header id="main-header">
-          <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">KIANGANI JEAN-MARIE</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#main-header">Accueil</a></li>
-                  <!-- <li class=""><a href="#feature">A propos</a></li> -->
-                  <li class=""><a href="#service">Services</a></li>
-                  <li class=""><a href="#portfolio">Projet</a></li>
-                  <li class=""><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div class="wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="banner-info text-center wow fadeIn delay-05s">
-                <h1 class="bnr-title">DEVELOPPEUR</h1>
-                <!-- <h2 class="bnr-sub-title">Starting a new journey!!</h2> -->
-                <p class="bnr-para" style="font-size: 27px;">Je m’appelle Jean-Marie Kiangani, j’ai 20 ans et je suis développeur web et mobile.</br>
-                  Je suis actuellement étudiant à l'école INSTA à Paris 5 en première année de BTS Services informatiques 
-                  aux Organisations (BTS SIO) dans la spécialité de Solutions Logicielles et Applications Métier (SLAM). </p>
+.show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
 
-                  <p style="font-size: 27px;">
-                    J’ai toujours été attiré par l’informatique et les nouvelles technologies.</br>
-                    C’est tout naturellement que je me suis intéressé vers ces études, en effectuant mes 2 années d’études en Bac pro Systèmes numériques option C réseaux informatiques et systèmes communicants (RISC),</br>
-                    et que ensuite je me dirige vers une BTS SIO option SLAM.
-                    </p>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-                    
-                <div class="brn-btn">
-                  <!-- <a href="#" class="btn btn-download">Download now!</a>
-                  <a href="#" class="btn btn-more">Learn More</a> -->
-                </div>
-                <div class="overlay-detail">
-                  <a href="#feature"><i class="fa fa-angle-down"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ HEADER-->
-    <!---->
-    <section id="feature" class="section-padding wow fadeIn delay-05s">
-      <div class="container">
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <section id="service" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Services</h2>
-            <!-- <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p> -->
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>ÉVELOPPEMENT</h3>
-              <p>Création de site web | Application
-                sur-mesure repondant aux besoins des clients</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>M</span>AINTENANCE</h3>
-              <p>Gestion d'hébérgement, garanti d'accessibilité, intégration régulière des mises à jour de sécurité</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>A</span>CCOMPAGNEMENT</h3>
-              <p>Je gère entièrement les projets en assurant une communication constante</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>igital Marketing</h3>
-              <p>En comprenant les besoins et les désirs de mes clients potentiels, je peux créer une stratégie marketing efficace pour attirer leur attention et les convertir en clients fidèles.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Compétence</h2>
-            <p class="sub-title pad-bt15">Ce sont toutes mes compétences me permettant d'être indispensable auprès des mes clients en tant que développeur</p>
-            <hr class="bottom-line">
-          </div>
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port01.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port02.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port03.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port04.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port05.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port06.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div> -->
-      <!-- </div> -->
+  to {
+    opacity: 1;
+  }
+}
 
-      <ul>
-        <li>.NET, ASP, C#</li>
-        <li>Back-end</li>
-        <li>Bases de données (SGBD)</li>
-        <li>C, C++</li>
-        <li>Création application Android</li>
-        <li>Création application iPhone</li>
-        <li>Framework (Symfony)</li>
-        <li>Frameworks JavaScript</li>
-        <li>Front-end</li>
-        <li>Full-stack</li>
-        <li>JavaScript</li>
-        <li>Jeux vidéos</li>
-        <li>PHP, MySQL</li>
-        <li>React</li>
-        <li>jQuery</li>
-        <li>Dropshipping</li>
-        <li>Marketplace</li>
-        <li>Paiement Paypal</li>
-        <li>Paiement Stripe</li>
-        <li>Paiement par carte bancaire</li>
-        <li>Shopify</li>
-        <li>Site E-commerce</li>
-        <li>CSS, HTML, XML</li>
-        <li>Création de site internet</li>
-        <li>Développement spécifique</li>
-        <li>Installation de Script</li>
-        <li>Integration HTML</li>
-        <li>Migration ou refonte de site</li>
-        <li>Marketing</li>
-        <li>Traduction</li>
-      </ul>
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
 
-    </section>
-    
-    <section id="contact" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center white">
-            <h2 class="service-title pad-bt15"><h1 id="Cv">Curriculum Vitae</h1>
 
-              <a href="#">Télecharger mon cv</a></h2>
-            <!-- <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p> -->
-            <hr class="bottom-line white-bg">
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="loction-info white">
-              <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>PARIS</p>
-              <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>jeremykiangani@gmail.com</p>
-              <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>Tel : 06 05 67 03 14</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="contact-form">
-              <div id="sendmessage">Ton message à été envoyer !</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="col-md-6 padding-right-zero">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Ton Nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Ton Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-submit">ENVOYER</button>
-                </div>
-              </form>
+</style>
+<body class="bg-gray-900 text-white">
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <footer id="footer">
-      <div class="container">
-        <div class="row text-center">
-          <p>&copy; KIANGANI</p>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
-            -->
+    <!-- HEADER -->
+    <header class="p-10 text-center">
+        <h1 class="text-4xl mb-2">Jean-Marie Kiangani</h1>
+        <nav class="space-x-4">
+            <a href="#about" class="text-gray-400 hover:text-white">À propos</a>
+            <a href="#services" class="text-gray-400 hover:text-white">Services</a>
+            <a href="#projects" class="text-gray-400 hover:text-white">Projets</a>
+            <!-- <a href="#contact" class="text-gray-400 hover:text-white">Contact</a> -->
+        </nav>
+    </header>
 
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!---->
+<!-- ABOUT -->
+<section id="about" class="px-10 py-20 animate-fadeIn">
+  <h2 class="text-3xl mb-4">À propos</h2>
+  <div class="about-slides">
+      <p id="about1" class="bnr-para text-lg">Je m’appelle Jean-Marie Kiangani, j’ai 20 ans et je suis développeur web et mobile. Je suis actuellement étudiant à l'école INSTA à Paris 5 en première année de BTS Services informatiques aux Organisations (BTS SIO) spécialité Solutions Logicielles et Applications Métier (SLAM).</p>
+      <p id="about2" class="text-lg hide">L'informatique et les nouvelles technologies m’ont toujours attiré. J’ai naturellement choisi ce domaine pour mes études, en commençant par un Bac pro Systèmes numériques option C réseaux informatiques et systèmes communicants (RISC), puis j’ai choisi de poursuivre avec un BTS SIO option SLAM.</p>
   </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
+</section>
 
+
+
+
+
+
+<!-- SERVICES -->
+<section id="services" class="px-10 py-20 bg-gray-800">
+  <h2 class="text-3xl mb-4">Services</h2>
+  <div class="grid grid-cols-3 gap-8">
+      <div class="bg-gray-700 p-4 rounded">
+          <h3 class="text-2xl mb-2">Développement</h3>
+          <p>Création de site web | Application sur-mesure repondant aux besoins des clients</p>
+      </div>
+      <div class="bg-gray-700 p-4 rounded">
+          <h3 class="text-2xl mb-2">Maintenance</h3>
+          <p>Gestion d'hébérgement, garanti d'accessibilité, intégration régulière des mises à jour de sécurité</p>
+      </div>
+      <div class="bg-gray-700 p-4 rounded">
+          <h3 class="text-2xl mb-2">Accompagnement</h3>
+          <p>Je gère entièrement les projets en assurant une communication constante</p>
+      </div>
+      <div class="bg-gray-700 p-4 rounded">
+          <h3 class="text-2xl mb-2">Digital Marketing</h3>
+          <p>En comprenant les besoins et les désirs de mes clients potentiels, je peux créer une stratégie marketing efficace pour attirer leur attention et les convertir en clients fidèles.</p>
+      </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-gray-900 px-10 py-20 bg-gray-800">
+  <h2 class="text-3xl mb-4">Compétences</h2>
+  <!-- DEVELOPMENT SKILLS -->
+  <div class="mb-8">
+      <h3 class="text-2xl mb-2 text-yellow-500">Compétences en développement</h3>
+      <div class="grid grid-cols-2 gap-8">
+          <!-- Vous pouvez dupliquer ces blocs pour chaque compétence -->
+          <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">.NET, ASP, C#</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">C, C++</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Bases de données (SGBD)</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Framework (Symfony)</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">PHP, MySQL</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">JavaScript</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Frameworks JavaScript</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">React</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">jQuery</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">CSS, HTML, XML</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Integration HTML</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Création de site internet</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Développement spécifique</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Installation de Script</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Migration ou refonte de site</h4>
+        </div>
+        
+          <!-- Ajouter plus de compétences ici -->
+      </div>
+  </div>
+  <!-- OTHER SKILLS -->
+  <div>
+      <h3 class="text-2xl mb-2 text-yellow-500">Autres compétences</h3>
+      <div class="grid grid-cols-2 gap-8">
+          <!-- Vous pouvez dupliquer ces blocs pour chaque compétence -->
+          <div class="bg-gray-700 p-4 rounded">
+              <h4 class="text-xl mb-2">Dropshipping</h4>
+          </div>
+          <div class="bg-gray-700 p-4 rounded">
+              <h4 class="text-xl mb-2">Marketplace</h4>
+          </div>
+          <div class="bg-gray-700 p-4 rounded">
+              <h4 class="text-xl mb-2">Paiement Paypal</h4>
+          </div>
+          <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Paiement Stripe</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Paiement par carte bancaire</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Shopify</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Site E-commerce</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Marketing</h4>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+            <h4 class="text-xl mb-2">Traduction</h4>
+        </div>
+        
+          <!-- Ajouter plus de compétences ici -->
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="px-10 py-20">
+  <h2 class="text-3xl mb-4">Projets</h2>
+  <!-- Vous pouvez dupliquer ces blocs pour chaque projet -->
+  <div class="grid grid-cols-3 gap-8">
+      <div class="p-4 rounded" style="background: url('twirling.png'); background-size: cover; background-position: center;">
+          <h3 class="text-2xl mb-2 text-white">Twirling</h3>
+          <p class="text-white">Blog d'un club de Sport de Twirling</p>
+          <button class="mt-4 inline-block bg-red-900 text-white px-4 py-2 rounded">Indisponible</button>
+      </div>
+
+      <div class="p-4 rounded" style="background: url('zeusroom.png'); background-size: cover; background-position: center;">
+          <h3 class="text-2xl mb-2 text-white">Zeusroom</h3>
+          <p class="text-white">Site-web et Application de motivation.</p>
+          <button class="mt-4 inline-block bg-red-900 text-white px-4 py-2 rounded">Indisponible</button>
+      </div>
+
+
+      <div class="p-4 rounded" style="background: url('sensure.png'); background-size: cover; background-position: center;">
+        <h3 class="text-2xl mb-2 text-white">Sensure</h3>
+        <p class="text-white">Site web et futur Application de rencontre.</p>
+        <a href="" class="mt-4 inline-block bg-blue-900 text-white px-4 py-2 rounded">Disponible</a>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="px-10 py-20 bg-gray-800">
+    <h2 class="text-3xl mb-4">Contact</h2>
+    <form>
+        <div class="mb-4">
+            <label class="block mb-2">Nom</label>
+            <input type="text" class="w-full p-2 border border-gray-500 rounded" placeholder="Nom">
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-2">Email</label>
+            <input type="email" class="w-full p-2 border border-gray-500 rounded" placeholder="Email">
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-2">Message</label>
+            <textarea class="w-full p-2 border border-gray-500 rounded" placeholder="Message"></textarea>
+        </div>
+
+        <button type="submit" class="mt-4 inline-block bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Envoyer</button>
+    </form>
+</section>
+
+
+<script>
+let index = 0;
+const aboutSlides = document.querySelectorAll(".about-slides p");
+
+aboutSlides.forEach((p, i) => {
+    if (i !== index) p.classList.add("hide");
+    else p.classList.add("show");
+});
+
+setInterval(function(){
+    aboutSlides[index].classList.remove("show");
+    aboutSlides[index].classList.add("hide");
+    index = (index + 1) % aboutSlides.length;
+    aboutSlides[index].classList.remove("hide");
+    aboutSlides[index].classList.add("show");
+}, 25000);
+
+</script>
 </body>
 </html>
